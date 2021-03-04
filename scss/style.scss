@@ -1,0 +1,11 @@
+$color-main: yellow;
+$color-secondary: pink;
+
+body {
+    position: relative;
+    background-color: $color-main;
+}
+
+h1 {
+    color: $color-secondary;
+}
