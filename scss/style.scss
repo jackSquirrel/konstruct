@@ -41,6 +41,31 @@ body {
 .section_header {
     padding-top: $base * 10px;
     padding-bottom: $base * 18px;
+    color: $fc-light;
+    text-align: center;
+    background-image: url(/imgs/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_title {
+    margin: 0;
+    margin-top: $base * 80px;
+    font-size: $base * 15px;
+    line-height: $base * 18px;
+}
+
+.header_text {
+    font-size: $base * 4px;
+}
+
+.header_scroll {
+    display: block;
+    margin-top: $base * 55px;
+    font-size: $base * 3px;
+    color: $fc-light;
+    text-decoration: none;
+    cursor: pointer;
 }
 // === / HEADER ===
 

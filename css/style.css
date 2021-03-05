@@ -11,7 +11,29 @@ body {
 
 .section_header {
   padding-top: 40px;
-  padding-bottom: 72px; }
+  padding-bottom: 72px;
+  color: #fff;
+  text-align: center;
+  background-image: url(/imgs/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.header_title {
+  margin: 0;
+  margin-top: 320px;
+  font-size: 60px;
+  line-height: 72px; }
+
+.header_text {
+  font-size: 16px; }
+
+.header_scroll {
+  display: block;
+  margin-top: 220px;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer; }
 
 .section_navbar {
   padding-top: 24px;
