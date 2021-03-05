@@ -1,1 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap');
+// === Mixin ===
+@mixin opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin bebas {
+    font-family: 'Bebas Neue', sans-serif;
+}
+// === / Mixin ===
+
+// === Variables ===
+$base: 4;
+
+$fw-regular: 400;
+$fw-medium: 600;
+$fw-bold: 700;
+
+$fc-dark: #48555b;
+$fc-light: #fff;
+// === / Variables ===
+
+// === COMMON ===
+body {
+    @include opensans;
+
+    color: $fc-dark;
+}
+
+.section_inner {
+    max-width: 940px;
+    margin: 0 auto;
+
+    &__wide {
+        max-width: 1440px;
+    }
+}
+// === / COMMON ===
+
+// === HEADER ===
+.section_header {
+    padding-top: $base * 10px;
+    padding-bottom: $base * 18px;
+}
+// === / HEADER ===
+
+// === NAVBAR ===
+.section_navbar {
+    padding-top: $base * 6px;
+    padding-bottom: $base * 6px;
+}
+// === / NAVBAR ===
+
+// === ABOUT ===
+.section_about {
+    padding-top: $base * 15px;
+    padding-bottom: $base * 15px;
+}
+// === / ABOUT ===
+
+// === SERVICES ===
+.section_services {
+    padding-top: $base * 15px;
+    padding-bottom: $base * 15px;
+}
+// === / SERVICES===
+
+// === GET-IN-TOUCH ===
+.section_get-in-touch {
+    padding-top: $base * 30px;
+    padding-bottom: $base * 58px;
+}
+// === / GET-IN-TOUCH===
+
+// === NEWSLETTER ===
+.section_newsletter {
+    padding-top: $base * 9px;
+    padding-bottom: $base * 9px;
+    color: $fc-light;
+    background-color: #171819;
+}
+// === / NEWSLETTER===
+
+// === FOOTER ===
+.section_footer {
+    padding-top: $base * 10px;
+    padding-bottom: $base * 6px;
+    color: $fc-light;
+    background-color: #141a20;
+}
+// === / FOOTER===

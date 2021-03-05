@@ -1,1 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap");
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #48555b; }
+
+.section_inner {
+  max-width: 940px;
+  margin: 0 auto; }
+  .section_inner__wide {
+    max-width: 1440px; }
+
+.section_header {
+  padding-top: 40px;
+  padding-bottom: 72px; }
+
+.section_navbar {
+  padding-top: 24px;
+  padding-bottom: 24px; }
+
+.section_about {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.section_services {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.section_get-in-touch {
+  padding-top: 120px;
+  padding-bottom: 232px; }
+
+.section_newsletter {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  color: #fff;
+  background-color: #171819; }
+
+.section_footer {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  color: #fff;
+  background-color: #141a20; }
