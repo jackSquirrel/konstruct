@@ -190,6 +190,33 @@ body {
   color: #fff;
   background-color: #171819; }
 
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  max-width: 685px;
+  margin: 0 auto; }
+
+.newsletter__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff; }
+
+.newsletter__form {
+  display: flex; }
+
+.newsletter__input {
+  box-sizing: border-box;
+  width: 250px;
+  height: 40px;
+  padding: 11px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #48555b;
+  border: none; }
+
 .section_footer {
   padding-top: 40px;
   padding-bottom: 24px;

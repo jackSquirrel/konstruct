@@ -271,6 +271,37 @@ body {
     color: $fc-light;
     background-color: #171819;
 }
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    max-width: 685px;
+    margin: 0 auto;
+}
+
+.newsletter__title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: $fw-bold;
+    line-height: 30px;
+    color: #fff;
+}
+
+.newsletter__form {
+    display: flex;
+}
+
+.newsletter__input {
+    box-sizing: border-box;
+    width: 250px;
+    height: 40px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: $fw-regular;
+    line-height: 19px;
+    color: $fc-dark;
+    border: none;
+}
 // === / NEWSLETTER===
 
 // === FOOTER ===
