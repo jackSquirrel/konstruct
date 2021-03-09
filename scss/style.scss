@@ -18,6 +18,8 @@ $fw-bold: 700;
 
 $fc-dark: #48555b;
 $fc-light: #fff;
+$color-blue: #00a4e5;
+$color-border: #e6e6e6;
 // === / Variables ===
 
 // === COMMON ===
@@ -34,6 +36,12 @@ body {
     &__wide {
         max-width: 1440px;
     }
+}
+
+.underline {
+    width: 50px;
+    margin-top: 10px;
+    border: 1px solid $color-blue;
 }
 // === / COMMON ===
 
@@ -73,6 +81,37 @@ body {
 .section_navbar {
     padding-top: $base * 6px;
     padding-bottom: $base * 6px;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar_item {
+    & + & {
+        margin-left: $base * 10px;
+    }
+
+    &__link {
+        font-size: $base * 3px;
+        font-weight: $fw-medium;
+        color: $fc-dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-blue;
+        }
+    }
 }
 // === / NAVBAR ===
 
@@ -80,6 +119,62 @@ body {
 .section_about {
     padding-top: $base * 15px;
     padding-bottom: $base * 15px;
+
+    .section_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: $fw-bold;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: $base * 10px;
+
+    &-text {
+        max-width: $base * 100px;
+    }
+}
+
+.about__images {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 140px * 3 + 40px;
+
+    &-item {
+        display: block;
+        max-width: $base * 35px;
+        max-height: $base * 56px;
+    }
+}
+
+.about__subtitle {
+    margin: 0;
+    font-size: $base * 5px;
+    font-weight: $fw-bold;
+    line-height: $base * 7px;
+    letter-spacing: 0.1875px;
+
+    span {
+        color: $color-blue;
+    }
+}
+
+.about__text {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: $fw-regular;
+    line-height: $base * 6px;
 }
 // === / ABOUT ===
 
