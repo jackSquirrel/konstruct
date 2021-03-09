@@ -43,6 +43,26 @@ body {
     margin-top: 10px;
     border: 1px solid $color-blue;
 }
+
+.text {
+    margin: 0;
+    font-size: 13px;
+    font-weight: $fw-regular;
+    line-height: $base * 6px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    padding: 11px 29px;
+    font-size: 13px;
+    font-weight: $fw-bold;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-color: #00a4e5;
+    border: none;
+}
 // === / COMMON ===
 
 // === HEADER ===
@@ -159,6 +179,7 @@ body {
 
 .about__subtitle {
     margin: 0;
+    margin-bottom: 30px;
     font-size: $base * 5px;
     font-weight: $fw-bold;
     line-height: $base * 7px;
@@ -168,14 +189,6 @@ body {
         color: $color-blue;
     }
 }
-
-.about__text {
-    margin: 0;
-    margin-top: 30px;
-    font-size: 13px;
-    font-weight: $fw-regular;
-    line-height: $base * 6px;
-}
 // === / ABOUT ===
 
 // === SERVICES ===
@@ -183,12 +196,71 @@ body {
     padding-top: $base * 15px;
     padding-bottom: $base * 15px;
 }
+
+.services__capabilities {
+    display: flex;
+    justify-content: space-between;
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        width: 590px;
+    }
+}
+
+.services__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: $fw-bold;
+    line-height: $base * 6px;
+}
+
+.services__text {
+    max-width: $base * 101px;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+}
+
+.services__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $base * 20px;
+}
+
+.service {
+    box-sizing: border-box;
+    max-width: $base * 74px;
+    padding: 38px 23px;
+    border: 1px solid #e6e6e6;
+}
+
+.service__title {
+    margin-top: $base * 6px;
+    margin-bottom: $base * 3px;
+    font-size: $base * 4px;
+    font-weight: $fw-bold;
+    line-height: $base * 6px;
+}
 // === / SERVICES===
 
 // === GET-IN-TOUCH ===
 .section_get-in-touch {
     padding-top: $base * 30px;
     padding-bottom: $base * 58px;
+    text-align: center;
+    background-image: url(/imgs/city.png);
+    background-repeat: no-repeat;
+    background-position-y: 4px;
+    background-size: cover;
+}
+
+.get-in-touch__title {
+    max-width: $base * 88px;
+    margin: 0 auto 35px;
+    font-size: 30px;
+    font-weight: $fw-bold;
+    line-height: $base * 9px;
 }
 // === / GET-IN-TOUCH===
 

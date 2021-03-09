@@ -14,6 +14,24 @@ body {
   margin-top: 10px;
   border: 1px solid #00a4e5; }
 
+.text {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.btn {
+  width: 150px;
+  height: 40px;
+  padding: 11px 29px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-color: #00a4e5;
+  border: none; }
+
 .section_header {
   padding-top: 40px;
   padding-bottom: 72px;
@@ -100,6 +118,7 @@ body {
 
 .about__subtitle {
   margin: 0;
+  margin-bottom: 30px;
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
@@ -107,20 +126,63 @@ body {
   .about__subtitle span {
     color: #00a4e5; }
 
-.about__text {
-  margin: 0;
-  margin-top: 30px;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 24px; }
-
 .section_services {
   padding-top: 60px;
   padding-bottom: 60px; }
 
+.services__capabilities {
+  display: flex;
+  justify-content: space-between; }
+  .services__capabilities-content {
+    display: flex;
+    justify-content: space-between;
+    width: 590px; }
+
+.services__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px; }
+
+.services__text {
+  max-width: 404px;
+  font-size: 11px;
+  line-height: 19px;
+  letter-spacing: 0.2px; }
+
+.services__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px; }
+
+.service {
+  box-sizing: border-box;
+  max-width: 296px;
+  padding: 38px 23px;
+  border: 1px solid #e6e6e6; }
+
+.service__title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; }
+
 .section_get-in-touch {
   padding-top: 120px;
-  padding-bottom: 232px; }
+  padding-bottom: 232px;
+  text-align: center;
+  background-image: url(/imgs/city.png);
+  background-repeat: no-repeat;
+  background-position-y: 4px;
+  background-size: cover; }
+
+.get-in-touch__title {
+  max-width: 352px;
+  margin: 0 auto 35px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px; }
 
 .section_newsletter {
   padding-top: 36px;
