@@ -10,37 +10,37 @@
 </head>
 <body>
     <!-- header -->
-    <header class="section_outer section_header">
-        <div class="section_inner">
-            <img class="header_logo" src="/imgs/logo.png" alt="Logo">
+    <header class="section-outer section__header">
+        <div class="section__inner">
+            <a href="#"><img class="header_logo" src="/imgs/logo.png" alt="Logo"></a>
             <h1 class="header_title">PARTNER WITH KONSTUCT</h1>
             <div class="header_text">An award-winning construction management firm</div>
-            <a class="header_scroll" href="#">SCROLL DOWN</a>
+            <a class="header_scroll" href="#nav">SCROLL DOWN</a>
         </div>
     </header>
     <!-- / header -->
 
     <!-- navbar -->
-    <section class="section_outer section_navbar">
-        <div class="section_inner">
+    <section  id="nav" class="section-outer section__navbar">
+        <div class="section__inner">
             <div class="main-navigation">
-                <a><img src="/imgs/logo-black.png" alt="Logo"></a>
+                <a href="#"><img src="/imgs/logo-black.png" alt="Logo"></a>
                 <nav>
                     <ul class="navbar_list">
                         <li class="navbar_item">
                             <a href="#" class="navbar_item__link">HOME</a>
                         </li>
                         <li class="navbar_item">
-                            <a href="#" class="navbar_item__link">ABOUT</a>
+                            <a href="#about" class="navbar_item__link">ABOUT</a>
                         </li>
                         <li class="navbar_item">
-                            <a href="#" class="navbar_item__link">SERVICES</a>
+                            <a href="#services" class="navbar_item__link">SERVICES</a>
                         </li>
                         <li class="navbar_item">
-                            <a href="#" class="navbar_item__link">WORK</a>
+                            <a href="#work" class="navbar_item__link">WORK</a>
                         </li>
                         <li class="navbar_item">
-                            <a href="#" class="navbar_item__link">CONTACT</a>
+                            <a href="#contact" class="navbar_item__link">CONTACT</a>
                         </li>
                     </ul>
                 </nav>
@@ -50,8 +50,8 @@
     <!-- / navbar -->
 
     <!-- about -->
-    <section class="section_outer section_about">
-        <div class="section_inner">
+    <section id="about" class="section-outer section__about">
+        <div class="section__inner">
             <h2 class="about__title">OUR STORY</h2>
             <div class="underline"></div>
             <div class="about__content">
@@ -74,8 +74,8 @@
     <!-- / about -->
 
     <!-- services -->
-    <section class="section_outer section_services">
-        <div class="section_inner">
+    <section id="services" class="section-outer section__services">
+        <div class="section__inner">
             <div class="services__capabilities">
                 <div class="services__capabilities-title">
                     <h2 class="services__title">OUR CAPABILITIES</h2>
@@ -109,8 +109,8 @@
     <!-- / services -->
 
     <!-- get-in-touch -->
-    <section class="section_outer section_get-in-touch">
-        <div class="section_inner section_inner__wide">
+    <section id="work" class="section-outer section__get-in-touch">
+        <div class="section__inner section__inner_wide">
             <h2 class="get-in-touch__title">Want to build something amazing?</h2>
             <button class="btn">GET IN TOUCH</button>
         </div>
@@ -118,8 +118,8 @@
     <!-- / get-in-touch -->
 
     <!-- newsletter -->
-    <section class="section_outer section_newsletter">
-        <div class="section_inner">
+    <section id="contact" class="section-outer section__newsletter">
+        <div class="section__inner">
             <div class="newsletter">
                 <p class="newsletter__title">Newsletter Signup</p>
                 <form action="" method="POST" name="newsletter" class="newsletter__form">
@@ -133,10 +133,50 @@
     <!-- / newsletter -->
 
     <!-- footer -->
-    <footer class="section_outer section_footer">
-        <div class="section_inner">
-            footer
+    <footer class="section-outer section__footer">
+        <div class="section__inner">
+            <div class="footer__company-info">
+                <h4 class="footer__title">COMPANY</h4>
+                <div class="company-info__container">
+                    <a href="#"><img src="/imgs/logo.png" alt="Logo" class="company-info__image"></a>
+                    <p class="company-info__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                </div>
+            </div>
+            <div class="footer__links">
+                <h4 class="footer__title">LINKS</h4>
+                <div class="footer__links-container">
+                    <ul class="links__stack">
+                        <li class="link__item"><a href="#">HOME</a></li>
+                        <li class="link__item"><a href="#about">ABOUT</a></li>
+                        <li class="link__item"><a href="#services">SERVICES</a></li>
+                        <li class="link__item"><a href="#work">PROJECTS</a></li>
+                        <li class="link__item"><a href="#contact">CONTACT US</a></li>
+                    </ul>
+                    <ul class="links__stack">
+                        <li class="link__item"><a href="#">FAQ</a></li>
+                        <li class="link__item"><a href="#">TERMS</a></li>
+                        <li class="link__item"><a href="#">CAREERS</a></li>
+                    </ul>
+                    <ul class="links__stack">
+                        <li class="link__item"><a href="#">BLOG</a></li>
+                        <li class="link__item"><a href="#">PARTNERS</a></li>
+                        <li class="link__item"><a href="#">NEWS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <h4 class="footer__title">CONTACT US</h4>
+                <p class="contacts__text">213 Baker StreetOriel City Kounty7000 KNW,Kountry Name</p>
+                <a href="tel:+23 994 233 4022" class="contacts__text">+23 994 233 4022</p>
+                <a href="mailto:info@konstruct.com" class="contacts__text">info@konstruct.com</p>
+            </div>
+            <div class="footer__socials">
+                <a href=""><div class="footer__social footer__social_fb"></div></a>
+                <a href=""><div class="footer__social footer__social_tw"></div></a>
+                <a href=""><div class="footer__social footer__social_gm"></div></a>
+            </div>
         </div>
+        <div class="footer__copyright">© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</div>
     </section>
     <!-- / footer -->
 </body>

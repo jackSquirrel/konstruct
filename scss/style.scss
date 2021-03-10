@@ -23,17 +23,21 @@ $color-border: #e6e6e6;
 // === / Variables ===
 
 // === COMMON ===
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     @include opensans;
 
     color: $fc-dark;
 }
 
-.section_inner {
+.section__inner {
     max-width: 940px;
     margin: 0 auto;
 
-    &__wide {
+    &_wide {
         max-width: 1440px;
     }
 }
@@ -60,13 +64,17 @@ body {
     color: #fff;
     text-align: center;
     cursor: pointer;
-    background-color: #00a4e5;
+    background-color: $color-blue;
     border: none;
+
+    &:hover {
+        background-color: lighten($color-blue, 10%);
+    }
 }
 // === / COMMON ===
 
 // === HEADER ===
-.section_header {
+.section__header {
     padding-top: $base * 10px;
     padding-bottom: $base * 18px;
     color: $fc-light;
@@ -98,9 +106,12 @@ body {
 // === / HEADER ===
 
 // === NAVBAR ===
-.section_navbar {
+.section__navbar {
+    position: sticky;
+    top: 0;
     padding-top: $base * 6px;
     padding-bottom: $base * 6px;
+    background-color: #fff;
     border-top: 1px solid $color-border;
     border-bottom: 1px solid $color-border;
 }
@@ -136,11 +147,11 @@ body {
 // === / NAVBAR ===
 
 // === ABOUT ===
-.section_about {
+.section__about {
     padding-top: $base * 15px;
     padding-bottom: $base * 15px;
 
-    .section_inner {
+    .section__inner {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -192,7 +203,7 @@ body {
 // === / ABOUT ===
 
 // === SERVICES ===
-.section_services {
+.section__services {
     padding-top: $base * 15px;
     padding-bottom: $base * 15px;
 }
@@ -245,7 +256,7 @@ body {
 // === / SERVICES===
 
 // === GET-IN-TOUCH ===
-.section_get-in-touch {
+.section__get-in-touch {
     padding-top: $base * 30px;
     padding-bottom: $base * 58px;
     text-align: center;
@@ -265,7 +276,7 @@ body {
 // === / GET-IN-TOUCH===
 
 // === NEWSLETTER ===
-.section_newsletter {
+.section__newsletter {
     padding-top: $base * 9px;
     padding-bottom: $base * 9px;
     color: $fc-light;
@@ -305,10 +316,106 @@ body {
 // === / NEWSLETTER===
 
 // === FOOTER ===
-.section_footer {
+.section__footer {
     padding-top: $base * 10px;
-    padding-bottom: $base * 6px;
     color: $fc-light;
     background-color: #141a20;
+
+    .section__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 11px;
+    font-weight: $fw-regular;
+    line-height: 15px;
+    color: #fff;
+}
+
+.company-info__text {
+    max-width: 250px;
+    margin: 15px 0 0 0;
+    font-size: 11px;
+    font-weight: $fw-regular;
+    line-height: 19px;
+    color: #fff;
+}
+
+.footer__links-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 262px;
+}
+
+.links__stack {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    & + & {
+        margin-left: $base * 9px;
+    }
+}
+
+.link__item {
+    font-size: 11px;
+    font-weight: $fw-medium;
+    line-height: 25px;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.contacts__text {
+    max-width: 141px;
+    margin: 0;
+    font-size: 11px;
+    font-weight: $fw-regular;
+    line-height: $base * 4px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.8;
+
+    & + & {
+        margin-top: 10px;
+    }
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: space-between;
+    width: 87px;
+}
+
+.footer__social {
+    width: 12px;
+    height: 12px;
+
+    &_fb {
+        background-image: url(/imgs/fb.svg);
+    }
+
+    &_tw {
+        background-image: url(/imgs/twitter.svg);
+    }
+
+    &_gm {
+        background-image: url(/imgs/google.svg);
+    }
+}
+
+.footer__copyright {
+    padding: 22px 0;
+    font-size: 11px;
+    font-weight: $fw-regular;
+    line-height: 15px;
+    text-align: center;
+    background-color: #171819;
 }
 // === / FOOTER===
