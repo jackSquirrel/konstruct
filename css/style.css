@@ -42,7 +42,7 @@ body {
   padding-bottom: 72px;
   color: #fff;
   text-align: center;
-  background-image: url(/imgs/header-bg.png);
+  background-image: url(../imgs/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -180,7 +180,7 @@ body {
   padding-top: 120px;
   padding-bottom: 232px;
   text-align: center;
-  background-image: url(/imgs/city.png);
+  background-image: url(../imgs/city.png);
   background-repeat: no-repeat;
   background-position-y: 4px;
   background-size: cover; }
@@ -290,11 +290,11 @@ body {
   width: 12px;
   height: 12px; }
   .footer__social_fb {
-    background-image: url(/imgs/fb.svg); }
+    background-image: url(../imgs/fb.svg); }
   .footer__social_tw {
-    background-image: url(/imgs/twitter.svg); }
+    background-image: url(../imgs/twitter.svg); }
   .footer__social_gm {
-    background-image: url(/imgs/google.svg); }
+    background-image: url(../imgs/google.svg); }
 
 .footer__copyright {
   padding: 22px 0;
