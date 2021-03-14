@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #48555b; }
+
+.section__inner {
+  max-width: 940px;
+  margin: 0 auto; }
+  .section__inner_wide {
+    max-width: 1440px; }
+
+.underline {
+  width: 50px;
+  margin-top: 10px;
+  border: 1px solid #00a4e5; }
+
+.text {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.btn {
+  width: 150px;
+  height: 40px;
+  padding: 11px 29px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-color: #00a4e5;
+  border: none; }
+  .btn:hover {
+    background-color: #19beff; }
+
+.section__header {
+  padding-top: 40px;
+  padding-bottom: 72px;
+  color: #fff;
+  text-align: center;
+  background-image: url(../imgs/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.header_title {
+  margin: 0;
+  margin-top: 320px;
+  font-size: 60px;
+  line-height: 72px; }
+
+.header_text {
+  font-size: 16px; }
+
+.header_scroll {
+  display: block;
+  margin-top: 220px;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer; }
+
+.section__navbar {
+  position: sticky;
+  top: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #fff;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6; }
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between; }
+
+.navbar_list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.navbar_item + .navbar_item {
+  margin-left: 40px; }
+
+.navbar_item__link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #48555b;
+  text-decoration: none; }
+  .navbar_item__link:hover {
+    color: #00a4e5; }
+
+.section__about {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .section__about .section__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.about__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700; }
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px; }
+  .about__content-text {
+    max-width: 400px; }
+
+.about__images {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 460px; }
+  .about__images-item {
+    display: block;
+    max-width: 140px;
+    max-height: 224px; }
+
+.about__subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.1875px; }
+  .about__subtitle span {
+    color: #00a4e5; }
+
+.section__services {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.services__capabilities {
+  display: flex;
+  justify-content: space-between; }
+  .services__capabilities-content {
+    display: flex;
+    justify-content: space-between;
+    width: 590px; }
+
+.services__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px; }
+
+.services__text {
+  max-width: 404px;
+  font-size: 11px;
+  line-height: 19px;
+  letter-spacing: 0.2px; }
+
+.services__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px; }
+
+.service {
+  box-sizing: border-box;
+  max-width: 296px;
+  padding: 38px 23px;
+  border: 1px solid #e6e6e6; }
+
+.service__title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; }
+
+.section__get-in-touch {
+  padding-top: 120px;
+  padding-bottom: 232px;
+  text-align: center;
+  background-image: url(../imgs/city.png);
+  background-repeat: no-repeat;
+  background-position-y: 4px;
+  background-size: cover; }
+
+.get-in-touch__title {
+  max-width: 352px;
+  margin: 0 auto 35px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px; }
+
+.section__newsletter {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  color: #fff;
+  background-color: #171819; }
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  max-width: 685px;
+  margin: 0 auto; }
+
+.newsletter__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff; }
+
+.newsletter__form {
+  display: flex; }
+
+.newsletter__input {
+  box-sizing: border-box;
+  width: 250px;
+  height: 40px;
+  padding: 11px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #48555b;
+  border: none; }
+
+.section__footer {
+  padding-top: 40px;
+  color: #fff;
+  background-color: #141a20; }
+  .section__footer .section__inner {
+    display: flex;
+    justify-content: space-between; }
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #fff; }
+
+.company-info__text {
+  max-width: 250px;
+  margin: 15px 0 0 0;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #fff; }
+
+.footer__links-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 262px; }
+
+.links__stack {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .links__stack + .links__stack {
+    margin-left: 36px; }
+
+.link__item {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 25px; }
+  .link__item a {
+    color: #fff;
+    text-decoration: none; }
+
+.contacts__text {
+  max-width: 141px;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.8; }
+  .contacts__text + .contacts__text {
+    margin-top: 10px; }
+
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  width: 87px; }
+
+.footer__social {
+  width: 12px;
+  height: 12px; }
+  .footer__social_fb {
+    background-image: url(../imgs/fb.svg); }
+  .footer__social_tw {
+    background-image: url(../imgs/twitter.svg); }
+  .footer__social_gm {
+    background-image: url(../imgs/google.svg); }
+
+.footer__copyright {
+  padding: 22px 0;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  background-color: #171819; }

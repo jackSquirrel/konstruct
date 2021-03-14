@@ -79,7 +79,7 @@ body {
     padding-bottom: $base * 18px;
     color: $fc-light;
     text-align: center;
-    background-image: url(/imgs/header-bg.png);
+    background-image: url(../imgs/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -260,7 +260,7 @@ body {
     padding-top: $base * 30px;
     padding-bottom: $base * 58px;
     text-align: center;
-    background-image: url(/imgs/city.png);
+    background-image: url(../imgs/city.png);
     background-repeat: no-repeat;
     background-position-y: 4px;
     background-size: cover;
@@ -398,15 +398,15 @@ body {
     height: 12px;
 
     &_fb {
-        background-image: url(/imgs/fb.svg);
+        background-image: url(../imgs/fb.svg);
     }
 
     &_tw {
-        background-image: url(/imgs/twitter.svg);
+        background-image: url(../imgs/twitter.svg);
     }
 
     &_gm {
-        background-image: url(/imgs/google.svg);
+        background-image: url(../imgs/google.svg);
     }
 }
 
