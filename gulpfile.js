@@ -61,7 +61,7 @@ gulp.task('deploy', function() {
 
 exports.dev = series(
     cleanBuild,
-    parallel(html, styles)
+    parallel(html, style)
 );
 exports.style = style;
 exports.watch = watch;

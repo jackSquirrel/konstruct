@@ -1,1 +1,4 @@
-/scss/normalize.css
+/scss/normalize.scss
+/build
+/css/style.css
+gulpfile.js
