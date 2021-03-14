@@ -1,8 +1,9 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
-const gulpStylelint = require('gulp-stylelint');
 const ghPages = require('gulp-gh-pages');
+const imagemin = require('gulp-imagemin');
+const sass = require('gulp-sass');
+const gulpStylelint = require('gulp-stylelint');
 const clean = require('gulp-clean');
 const { series, parallel } = gulp;
 
@@ -26,6 +27,12 @@ const html = () => {
       .src('*.html')
       .pipe(gulp.dest('build'))
   }
+
+const images = () => {
+  return gulp.src('imgs/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('build/imgs'))
+}
 
 // function lintCss () {
 //     return gulp.src('./scss/**/*.scss')
@@ -61,7 +68,7 @@ gulp.task('deploy', function() {
 
 exports.dev = series(
     cleanBuild,
-    parallel(html, style)
+    parallel(html, style, images)
 );
 exports.style = style;
 exports.watch = watch;
